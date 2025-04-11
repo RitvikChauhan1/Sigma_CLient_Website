@@ -99,43 +99,46 @@
                               <div class="col-md-3">
                                 <h6>Storage Tank</h6>
                                 <a class="dropdown-item" href="ms_storagetanks.html">MS Storage Tanks</a>
-                                <a class="dropdown-item" href="#">SS Storage Tanks</a>
-                                <a class="dropdown-item" href="#">Dairy Processing Plants</a>
-                                <a class="dropdown-item" href="#">Milk Storage Tanks</a>
+                                <a class="dropdown-item" href="ms_storagetanks.html">SS Storage Tanks</a>
+                                <a class="dropdown-item" href="ms_storagetanks.html">Dairy Processing Plants</a>
+                                <a class="dropdown-item" href="ms_storagetanks.html">Milk Storage Tanks</a>
                               </div>
                               <!-- Dairy Equipment -->
                               <div class="col-md-3">
                                 <h6>Dairy Equipment</h6>
-                                <a class="dropdown-item" href="#">Dairy SS Storage Tank</a>
-                                <a class="dropdown-item" href="#">Dairy Storage Tank</a>
-                                <a class="dropdown-item" href="#">Dairy Condenser</a>
-                                <a class="dropdown-item" href="#">Milk Processing Plants</a>
+                                <a class="dropdown-item" href="dairyequipment.html#d1">Dairy SS Storage Tank</a>
+                                <a class="dropdown-item" href="dairyequipment.html#d2">Dairy Storage Tank</a>
+                                <a class="dropdown-item" href="dairyequipment.html#d3">Dairy Condenser</a>
+                                <a class="dropdown-item" href="dairyequipment.html#d4">Milk Processing Plants</a>
+
                                 <h6 class="mt-3">Spray Dryer</h6>
-                                <a class="dropdown-item" href="#">SS Spray Dryer</a>
-                                <a class="dropdown-item" href="#">Spray Flash Dryer</a>
-                                <a class="dropdown-item" href="#">Spray Dryer</a>
+                                <a class="dropdown-item" href="spary_dryer.html#sd1">SS Spray Dryer</a>
+                                <a class="dropdown-item" href="spary_dryer.html#sd2">Spray Flash Dryer</a>
+                                <a class="dropdown-item" href="spary_dryer.html#sd3">Spray Dryer</a>
                               </div>
                               <!-- Industrial Evaporator -->
                               <div class="col-md-3">
                                 <h6>Industrial Evaporator</h6>
-                                <a class="dropdown-item" href="#">Vacuum Evaporator</a>
-                                <a class="dropdown-item" href="#">Industrial Evaporator</a>
+                                <a class="dropdown-item" href="industrial_evaporator.html#ie1">Vacuum Evaporator</a>
+                                <a class="dropdown-item" href="industrial_evaporator.html#ie2">Industrial Evaporator</a>
+
                                 <h6 class="mt-3">Distillation Equipment</h6>
-                                <a class="dropdown-item" href="#">Steam Distillation Unit</a>
-                                <a class="dropdown-item" href="#">Vapour Liquid Separator</a>
-                                <a class="dropdown-item" href="#">Short Path Distillation Unit</a>
-                                <a class="dropdown-item" href="#">Distillation Column</a>
+                                
+                                <a class="dropdown-item" href="distillation_equipments.html#de1">Vapour Liquid Separator</a>
+                                <a class="dropdown-item" href="distillation_equipments.html#de2">Short Path Distillation Unit</a>
+                                <a class="dropdown-item" href="distillation_equipments.html#de3">Distillation Column</a>
+                                <a class="dropdown-item" href="distillation_equipments.html#de4">Distiller Condenser </a>
                               </div>
                               <!-- Pharma Equipment -->
                               <div class="col-md-3">
                                 <h6>Pharma Equipment</h6>
-                                <a class="dropdown-item" href="#">Pharmaceutical Agitator Tank</a>
-                                <a class="dropdown-item" href="#">Pharmaceutical SS Storage Tank</a>
-                                <a class="dropdown-item" href="#">Pharmaceutical Storage Tank</a>
-                                <a class="dropdown-item" href="#">Storage Tanks</a>
+                                <a class="dropdown-item" href="pharma_equipments.html#pe1">Pharmaceutical Agitator Tank</a>
+                                <a class="dropdown-item" href="pharma_equipments.html#pe2">Pharmaceutical SS Storage Tank</a>
+                                <a class="dropdown-item" href="pharma_equipments.html#pe3">Pharmaceutical Storage Tank</a>
+                                <a class="dropdown-item" href="pharma_equipments.html#pe3">Storage Tanks</a>
                                 <h6 class="mt-3">Rotary Dryer</h6>
-                                <a class="dropdown-item" href="#">Rotary Direct Heat Dryer</a>
-                                <a class="dropdown-item" href="#">Rotary Dryer</a>
+                                <a class="dropdown-item" href="rotatory_dryer.html#rd1">Rotary Direct Heat Dryer</a>
+                                <a class="dropdown-item" href="rotatory_dryer.html#rd2">Rotary Dryer</a>
                               </div>
                             </div>
                           </div>
@@ -144,7 +147,10 @@
                       
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                     <a href="assests/sigma-tech-engineering.pdf" class="nav-item nav-link" download>Download Brochure</a>
-                </div>
+
+                </div>            
+                <!--<a href="https://htmlcodex.com/startup-company-website-template"
+                    class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a>-->
             </div>
         </nav>
 
@@ -162,25 +168,29 @@
     <!-- Navbar End -->
 
 
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3"
-                            placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
+    <!-- Contact Modal -->
+   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title w-100 text-center" id="contactModalLabel">
+            Connect with <strong>"Sigma Tech Engineering"</strong>
+          </h5>
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body text-center">
+          <div class="mb-3">
+            <h6 class="mb-1">📞 Mobile Number</h6>
+            <p class="fw-semibold mb-0">08047767582</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="mb-1">✉️ Email Address</h6>
+            <p class="fw-semibold mb-0">contact@sigmatechengineering.com</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Full Screen Search End -->
+  </div>
 
 
     <!-- Testimonial Start -->
@@ -201,7 +211,7 @@
         <!-- Content -->
         <div class="col-lg-6">
           <h4>Vacuum Evaporator</h4>
-          <a href="#">Get Latest Price</a>
+          <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Get Latest Price</a>
           <p>We are affianced in presenting a wide collection of <strong>Vacuum Evaporator</strong>. Offered array is famous for its unmatched quality. In addition, we guarantee to our valuable customers to provide a quality tested array that can be delivered from our end at market leading rates.</p>
           <strong>Product Details:</strong>
           <ul>
@@ -212,7 +222,7 @@
             <li>Hassle-free performance</li>
             <li>High efficiency</li>
           </ul>
-          <button class="btn btn-success">Yes, I am interested!</button>
+          <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#contactModal">Yes, I am interested!</button>
         </div>
   
       </div>
@@ -232,7 +242,7 @@
         <!-- Content -->
         <div class="col-lg-6">
           <h4>Industrial Evaporator</h4>
-          <a href="#">Get Latest Price</a>
+          <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Get Latest Price</a>
           <p>Being counted amongst the leading organizations, we are betrothed in offering an extensive range of <strong>Industrial Evaporator</strong>. Our provided product is broadly employed in the market for numerous purposes.</p>
           <strong>Features:</strong>
           <ul>
@@ -242,7 +252,7 @@
             <li>High efficiency</li>
             <li>Sturdy nature</li>
           </ul>
-          <button class="btn btn-success">Yes, I am interested!</button>
+          <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#contactModal">Yes, I am interested!</button>
         </div>
   
       </div>
