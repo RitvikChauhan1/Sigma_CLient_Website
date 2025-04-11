@@ -541,7 +541,32 @@ h6,
 #albumScroll::-webkit-scrollbar {
     display: none;             /* Chrome, Safari, Opera */
 }
-
+/* Mega menu */
+.mega-menu {
+    left: 0 !important;
+    right: 0 !important;
+    top: 100%;
+    display: none;
+  }
+  
+  .nav-item.dropdown:hover .mega-menu {
+    display: block;
+  }
+  
+  /* Smooth dropdown */
+  .navbar .dropdown-menu {
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    white-space: normal;
+  }
+  
+  .dropdown-menu h6 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
 @media (min-width: 767.98px) {
     .footer-about {
         margin-bottom: -75px;
