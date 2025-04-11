@@ -541,7 +541,6 @@ h6,
 #albumScroll::-webkit-scrollbar {
     display: none;             /* Chrome, Safari, Opera */
 }
-  
 
 @media (min-width: 767.98px) {
     .footer-about {
