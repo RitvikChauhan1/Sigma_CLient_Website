@@ -41,31 +41,7 @@
 
 <!-- jQuery + Owl Carousel JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function(){
-      $(".product-carousel").owlCarousel({
-        loop: true,
-        margin: 24,
-        nav: true,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        navText: [
-          '<i class="fa fa-chevron-left text-dark fs-4"></i>',
-          '<i class="fa fa-chevron-right text-dark fs-4"></i>'
-        ],
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 }
-        }
-      });
-    });
-  </script>
-  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>  
 </head>  
 <body>
     <!-- Spinner Start -->
@@ -477,45 +453,99 @@
     <!--End-->
 
     <!-- Vendor Start -->
-<div class="container-fluid py-5 bg-light wow fadeInUp" data-wow-delay="0.1s">
-  <div class="container py-5 mb-5">
-
-    <!-- Section Heading -->
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Explore Our Industrial Equipment</h2>
-      <p class="text-muted">High-performance dryers and agitators built for pharmaceutical and manufacturing excellence</p>
-    </div>
-
-    <!-- Product Carousel -->
-    <div class="owl-carousel product-carousel">
-
-      <!-- Product 1 -->
-      <div class="product-card text-center bg-white rounded shadow-sm overflow-hidden position-relative">
-        <img src="img/pharmaceutical-agitator-tank-250x250.webp" class="img-fluid w-100 product-img" alt="Pharmaceutical Agitator">
-        <div class="product-caption">Pharmaceutical Agitator Tank</div>
+    <div class="container-fluid py-5 bg-light wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+      
+          <!-- Section Heading -->
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Explore Our Industrial Equipment</h2>
+            <p class="text-muted">High-performance dryers and agitators built for pharmaceutical and manufacturing excellence</p>
+          </div>
+      
+          <!-- Carousel -->
+          <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+      
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="position-relative bg-white rounded shadow-sm overflow-hidden">
+                      <img src="img/pharmaceutical-agitator-tank-250x250.webp" class="img-fluid w-100" alt="Pharmaceutical Agitator">
+                      <div class="product-caption-overlay">Pharmaceutical Agitator Tank</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="position-relative bg-white rounded shadow-sm overflow-hidden">
+                      <img src="img/rotary-direct-heat-dryer-250x250.webp" class="img-fluid w-100" alt="Rotary Direct Heat Dryer">
+                      <div class="product-caption-overlay">Rotary Direct Heat Dryer</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="position-relative bg-white rounded shadow-sm overflow-hidden">
+                      <img src="img/spray-dryer-250x250.webp" class="img-fluid w-100" alt="SS Spray Dryer">
+                      <div class="product-caption-overlay">SS Spray Dryer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="position-relative bg-white rounded shadow-sm overflow-hidden">
+                      <img src="img/agitated-thin-film-dryer-250x250.webp" class="img-fluid w-100" alt="Agitated Thin Film Dryer">
+                      <div class="product-caption-overlay">Agitated Thin Film Dryer</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="position-relative bg-white rounded shadow-sm overflow-hidden">
+                      <img src="img/pharmaceutical-agitator-tank-250x250.webp" class="img-fluid w-100" alt="Pharmaceutical Agitator">
+                      <div class="product-caption-overlay">Pharmaceutical Agitator Tank</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="position-relative bg-white rounded shadow-sm overflow-hidden">
+                      <img src="img/rotary-direct-heat-dryer-250x250.webp" class="img-fluid w-100" alt="Rotary Direct Heat Dryer">
+                      <div class="product-caption-overlay">Rotary Direct Heat Dryer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      
+        </div>
       </div>
-
-      <!-- Product 2 -->
-      <div class="product-card text-center bg-white rounded shadow-sm overflow-hidden position-relative">
-        <img src="img/rotary-direct-heat-dryer-250x250.webp" class="img-fluid w-100 product-img" alt="Rotary Direct Heat Dryer">
-        <div class="product-caption">Rotary Direct Heat Dryer</div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="product-card text-center bg-white rounded shadow-sm overflow-hidden position-relative">
-        <img src="img/spray-dryer-250x250.webp" class="img-fluid w-100 product-img" alt="SS Spray Dryer">
-        <div class="product-caption">SS Spray Dryer</div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="product-card text-center bg-white rounded shadow-sm overflow-hidden position-relative">
-        <img src="img/agitated-thin-film-dryer-250x250.webp" class="img-fluid w-100 product-img" alt="Agitated Thin Film Dryer">
-        <div class="product-caption">Agitated Thin Film Dryer</div>
-      </div>
-
-    </div>
-  </div>
-</div>
+      
+      <!-- Add this to your CSS -->
+      <style>
+        .product-caption-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          font-weight: 600;
+          padding: 0.5rem;
+          text-align: center;
+        }
+      </style>
+      
+      
 
 
       
